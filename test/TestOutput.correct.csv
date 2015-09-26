@@ -1,0 +1,3 @@
+Taxon,Morans I,Randomized p-value,Z-score,Distance neighborhood (km),Direction neighborhood (degrees),Time neighborhood (months),P-value iterations,Number non-zero weights,Fraction observations with neighbors,Taxon prevalence (number of samples),Taxon mean relative abundance
+otu2,-0.1200000000000001,0.6208,-9999.0,0.0-150.0,0.0-360.0,0.0-12.0,10000,88,1.0,12,0.375
+otu1,0.6537254901960792,0.0,-9999.0,0.0-150.0,0.0-360.0,0.0-12.0,10000,88,1.0,16,0.425
