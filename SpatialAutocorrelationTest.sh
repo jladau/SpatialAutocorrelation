@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #loading local variables
-sDir=$HOME/Desktop/SpatialAutocorrelation_1.0
+sDir=$HOME/Documents/Research/Java/Distribution/SpatialAutocorrelation
 
 #running test
 echo ''
