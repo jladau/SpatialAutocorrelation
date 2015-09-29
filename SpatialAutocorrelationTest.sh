@@ -12,8 +12,6 @@ java -cp bin/Autocorrelation.jar edu.ucsf.SpatialAutocorrelation.SpatialAutocorr
 
 #checking that output is identical
 iDataDifferences=`diff test/TestOutput.data.correct.csv test/TestOutput.data.csv | wc -l`
-
-#TODO need to update code with random seed for randomizations so randomizations are replicable
 cut -d\, -f1-2,4-7,10-12 test/TestOutput.data.correct.csv > test/temp.1.csv
 cut -d\, -f1-2,4-7,10-12 test/TestOutput.data.csv > test/temp.2.csv
 iOutputDifferences=`diff test/temp.1.csv test/temp.2.csv | wc -l`
