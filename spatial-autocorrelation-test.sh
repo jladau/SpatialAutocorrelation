@@ -8,7 +8,16 @@ echo ''
 echo 'Running tests...'
 echo ''
 cd $sDir
-java -cp bin/Autocorrelation.jar edu.ucsf.SpatialAutocorrelation.SpatialAutocorrelationLauncher --sDataPath=$sDir/test/TestData.biom --sOutputPath=$sDir/test/TestOutput.csv --iMCMCChains=10 --iMCMCIterations=10000 --rgsDistanceNeighborhoods='0-150' --bOutputData=true --iPrevalenceMinimum=0 --bNormalize=false
+java -cp bin/Autocorrelation.jar edu.ucsf.SpatialAutocorrelation.SpatialAutocorrelationLauncher \
+	--sBIOMPath=$sDir/test/TestData.biom \
+	--sOutputPath=$sDir/test/TestOutput.csv \
+	--iMCMCChains=10 \
+	--iMCMCIterations=10000 \
+	--rgsDistanceNeighborhoods='0-150' \
+	--bOutputData=true \
+	--iPrevalenceMinimum=0 \
+	--bNormalize=false \
+	--iInitialScreeningIterations=10
 
 #checking that output is identical
 iDataDifferences=`diff test/TestOutput.data.correct.csv test/TestOutput.data.csv | wc -l`
